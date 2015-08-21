@@ -5,11 +5,9 @@
 
 {% block content %}
 
-  <div class="container">
-
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
-
-  </div>
+    <form method="post" action="/submit">
+      <input name="email" type="email" required>
+      <input type="submit">
+    </form>
 
 {% endblock %}
