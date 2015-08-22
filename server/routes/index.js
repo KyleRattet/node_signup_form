@@ -7,7 +7,9 @@ router.get('/', function(req, res, next) {
 
 router.post('/submit', function(req, res, next) {
   //on submit route
-  // res.send('You submitted ' + req.body.email);
+  // var email = req.body.email;
+  // console.log(email);
+  // res.send('You submitted email address: ' + email);
 
 
   //redirect to success route on success
@@ -17,7 +19,7 @@ router.post('/submit', function(req, res, next) {
 
 //success route, print success on browswer for user
 router.get('/success', function(req, res) {
-  res.send('success');
+  res.send('You submitted the form successfully.');
 });
 
 module.exports = router;
